@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+.badge {
+	color: #ffffff;
+}
+
+.badge-html {
+	background-color: #ff5500;
+}
+
+.badge-css {
+	background-color: #0073e6;
+}
+
+.badge-js {
+	background-color: #ffd91a;
+}
+
+.badge-php {
+	background-color: #735ce6;
+}
+
+.badge-figma {
+	background-color: #14cc8f;
+}
+
+.btn {
+	cursor: pointer;
+	transition: transform 0.3s ease;
+}
+
+.btn:hover {
+	transform: translateX(2px);
+}
+
