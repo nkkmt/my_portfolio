@@ -4,3 +4,45 @@
 	width: 200px;
 	border-radius: 50%;
 }
+
+.skills-container img {
+	max-width: 100%;
+	width: auto;
+}
+
+/* スマホ表示でのサイズ統一 */
+.html-logo, .css-logo, .js-logo {
+	height: 60px;
+	object-fit: contain;
+}
+
+.jquery-logo {
+	height: 30px;
+	margin-top: 15px;
+}
+
+.php-logo{
+	height: 45px;
+}
+
+.wp-logo {
+	height: 55px;
+}
+
+@media (min-width: 768px) {
+	.html-logo, .css-logo, .js-logo {
+		height: 80px;
+	}
+
+	.jquery-logo {
+		height: 40px;
+	}
+
+	.php-logo {
+		height: 60px;
+	}
+
+	.wp-logo {
+		height: 75px;
+	}
+}
