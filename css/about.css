@@ -1,8 +1,25 @@
 @charset "UTF-8";
+*, ::before, ::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
 
 .profile-icon {
 	width: 200px;
 	border-radius: 50%;
+}
+
+.skills-container {
+	row-gap: 20px;
 }
 
 .skills-container img {
@@ -10,15 +27,21 @@
 	width: auto;
 }
 
+.skills-container .col-4 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 /* スマホ表示でのサイズ統一 */
-.html-logo, .css-logo, .js-logo {
+.html-logo, .css-logo, .js-logo, .sql-logo {
 	height: 60px;
 	object-fit: contain;
 }
 
 .jquery-logo {
 	height: 30px;
-	margin-top: 15px;
+	/* margin-top: 15px; */
 }
 
 .php-logo{
@@ -30,7 +53,12 @@
 }
 
 @media (min-width: 768px) {
-	.html-logo, .css-logo, .js-logo {
+	.skills-container {
+		row-gap: 30px;
+		column-gap: 10px;
+	}
+
+	.html-logo, .css-logo, .js-logo, .sql-logo {
 		height: 80px;
 	}
 
@@ -45,4 +73,18 @@
 	.wp-logo {
 		height: 75px;
 	}
+}
+
+.projects-container {
+	column-gap: 20px;
+}
+
+.projects-container img {
+	max-width: 100%;
+	object-fit: contain;
+	transition: all 0.4s ease;
+}
+
+.projects-container a:hover img {
+	transform: scale(1.03);
 }

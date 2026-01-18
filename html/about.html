@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>About | Naoko Kumita</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/about.css">
 </head>
+
 <body class="bg-light">
 	<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
 		<div class="container">
@@ -21,7 +24,7 @@
 	<div class="container py-5">
 
 		<!-- profile -->
-		<div class="row align-items-center mb-5">
+		<section class="row align-items-center mb-5">
 			<div class="col-md-4 text-center mb-4 mb-md-0">
 				<img class="profile-icon" src="../img/profile_icon.jpeg" alt="プロフィールイラスト">
 			</div>
@@ -32,52 +35,91 @@
 				<p class="text-muted">現在も金沢市に在住しており、地元である金沢が大好きです。</p>
 				<p class="text-muted">資格・免許：普通自動車運転免許、理学療法士免許</p>
 				<p class="text-muted">スポーツ：陸上（9年）</p>
-				<p class="text-muted">趣味：ライブ参戦、アニメ・ドラマ鑑賞、サウナ、ごはん屋開拓</p>
+				<p class="text-muted">趣味：野外フェスやライブに行くこと、アニメ・ドラマ鑑賞、銭湯・サウナ、居酒屋開拓</p>
 				<p class="text-muted">座右の銘：行動しながら、納得できる最善を選び続ける。</p>
 			</div>
-		</div>
+		</section>
 
 		<!-- skills -->
-		<div class="container pr-0 pl-0">
-			<h2 class="fw-bold text-center">SKILLS</h2>
-			<p class="text-center">学習したスキル</p>
-			<div>
-				<h4 class="mb-4">Web Development</h4>
-				<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between mb-5 skills-container px-3">
-					<div class="col-4 col-md-auto text-center mb-4">
-						<img src="../img/html_logo.svg" class="img-fluid html-logo" alt="HTML5">
-					</div>
-
-					<div class="col-4 col-md-auto text-center mb-4">
-						<img src="../img/css_logo.png" class="img-fluid css-logo mr-3" alt="CSS">
-					</div>
-
-					<div class="col-4 col-md-auto text-center mb-4">
-						<img src="../img/js_logo.png" class="img-fluid js-logo" alt="JavaScript">
-					</div>
-
-					<div class="col-4 col-md-auto text-center mb-4">
-						<img src="../img/jquery_logo.svg" class="img-fluid jquery-logo" alt="JQuery">
-					</div>
-
-					<div class="col-4 col-md-auto text-center mb-4">
-						<img src="../img/php_logo.svg" class="img-fluid php-logo" alt="PHP">
-					</div>
-
-					<div class="col-4 col-md-auto text-center mb-4">
-						<img src="../img/wordpress_logo.png" class="img-fluid wp-logo" alt="WordPress">
-					</div>
+		<section class="container pr-0 pl-0 mb-5">
+			<div class="mb-4">
+				<h2 class="fw-bold text-center">SKILLS</h2>
+				<p class="text-center">学習したスキル</p>
+			</div>
+			<div class="d-flex flex-wrap align-items-center justify-content-center skills-container">
+				<div class="col-4 col-md-auto text-center">
+					<img src="../img/html_logo.svg" class="img-fluid html-logo" alt="HTML5">
 				</div>
 
-				<h4 class="mb-4">Detabase</h4>
-				
+				<div class="col-4 col-md-auto text-center">
+					<img src="../img/css_logo.png" class="img-fluid css-logo mr-3" alt="CSS">
+				</div>
+
+				<div class="col-4 col-md-auto text-center">
+					<img src="../img/js_logo.png" class="img-fluid js-logo" alt="JavaScript">
+				</div>
+
+				<div class="col-4 col-md-auto text-center">
+					<img src="../img/jquery_logo.svg" class="img-fluid jquery-logo" alt="JQuery">
+				</div>
+
+				<div class="col-4 col-md-auto text-center">
+					<img src="../img/php_logo.svg" class="img-fluid php-logo" alt="PHP">
+				</div>
+
+				<div class="col-4 col-md-auto text-center">
+					<img src="../img/mysql_logo.png" class="sql-logo" alt="MySQL">
+				</div>
+
+				<div class="col-4 col-md-auto text-center">
+					<img src="../img/wordpress_logo.png" class="img-fluid wp-logo" alt="WordPress">
+				</div>
 			</div>
-		</div>
+		</section>
+
+		<!-- Projects -->
+		<section class="container pr-0 pl-0 mb-5">
+			<div class="mb-4">
+				<h2 class="fw-bold text-center">Projects</h2>
+				<p class="text-center">制作物</p>
+				<div class="d-flex align-items-center justify-content-center projects-container">
+					<div class="card">
+						<div class="card-header">
+							<span class="badge text-bg-primary">個人制作</span>
+							<h3>本のマッチングアプリ「issatsu」</h3>
+						</div>
+						<a href="#">
+							<div class="card-body">
+								<img src="../img/issatsu.jpg" alt="本のマッチングアプリ風サイト">
+							</div>
+						</a>
+					</div>
+					<div class="card">
+						<div class="card-header">
+							<span class="badge text-bg-primary">グループ制作</span>
+							<h3>架空飲食店HP「本格韓国料理 ソダム」</h3>
+						</div>
+						<a href="#">
+							<div class="card-body">
+								<img src="../img/sodam_1.jpg" alt="架空飲食店HP">
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
 
 	</div>
 
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+		crossorigin="anonymous"></script>
 </body>
+
 </html>
