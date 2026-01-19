@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Projects | Naoko Kumita</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+	<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+		<div class="container">
+			<a class="navbar-brand fw-bold" href="index.html">Naoko Kumita</a>
+			<div class="ms-auto">
+				<a class="nav-link d-inline" href="about.html">About</a>
+				<a class="nav-link d-inline" href="#">Contact</a>
+			</div>
+		</div>
+	</nav>
+
+	<main class="container py-5">
+		<!-- ヒーロー -->
+		<section>
+			<span class="badge">グループ制作</span>
+			<h1 class="fw-bold mb-3">架空飲食店ホームページ「本格韓国料理 ソダム」</h1>
+			<p class="text-muted">テイクアウト注文、決済機能、店舗予約機能を備えたホームページ</p>
+			<img src="" alt="">
+		</section>
+
+		<!-- 概要 -->
+		<section class="mb-5">
+			<h4 class="fw-bold mb-3">概要</h4>
+			<p></p>
+			<ul>
+				<li><a href="https://nkkmt.stars.ne.jp/sodam/html/index.html">実際のサイト</a></li>
+				<li><a href="https://github.com/okb55-hub/group-project-site">GitHub</a></li>
+			</ul>
+		</section>
+		
+		<!-- ターゲット -->
+		<section class="mb-5">
+			<h4>ターゲット</h4>
+			<p>20〜30代女性、ファミリー層</p>
+		</section>
+
+		<!-- 制作期間 -->
+		<section class="mb-5">
+			<h4>制作期間</h4>
+			<ul>
+				<li>ワイヤーフレーム・デザイン：約1週間</li>
+				<li>コーディング：約3週間</li>
+			</ul>
+			<h4>作成人数</h4>
+			<p>3名</p>
+		</section>
+
+		<!-- 使用技術 -->
+		<section class="mb-5">
+			<h4>使用技術</h4>
+			<p>Figma/HTML/CSS/JavaScript/PHP/MySQL/Stripe</p>
+		</section>
+
+		<!-- 担当内容 -->
+		<section class="mb-5">
+			<h4>担当内容</h4>
+			<p>フロントエンド実装、UIデザイン、決済フローのロジック構築、Discordを用いた店舗通知システムの実装</p>
+			<p>担当ページ</p>
+			<ul>
+				<li>トップページ</li>
+				<ul>
+					<li>サイト全体のコンセプトを伝え、主要コンテンツ（テイクアウト・予約等）へスムーズに誘導。</li>
+					<li>ファーストビューの最適化：サイトを開いた瞬間に「美味しさ」を感じることができるよう、画像の選択やキャッチコピー視認性にこだわりました。</li>
+					<li>スムーズな導線設計：フローティングボタンを設置し、離脱率の低下を図りました。</li>
+				</ul>
+
+				<li>テイクアウト注文・決済フロー</li>
+				<ul>
+					<li>複雑な入力項目をストレスなく完了させ、正確な注文データを店舗へ送る。</li>
+					<li>範囲：注文情報入力 ＞ 決済方法選択 ＞ Stripe決済/PayPay疑似決済 ＞ 注文完了</li>
+					<li>入力・選択ミスの防止：
+						<ul>
+							<li>店舗の定休日（水曜日）が選択された際、即座にアラートを表示して他の日付への変更を促す動的なバリデーションを実装。</li>
+							<li>最終送信前に「確認モーダル」を挟むことで、ユーザーの操作ミスによる誤注文を未然に防ぐ工夫を施しました。</li>
+						</ul>
+					</li>
+					<li>データの整合性と状態管理：複数の画面にまたがる注文情報を正確に保持・受け渡しするため、PHPのSESSIONを用いた状態管理を実装。決済完了までデータの整合性を維持するロジックを構築しました。</li>
+				</ul>
+
+				<li>自動通知システム（Discord）</li>
+				<ul>
+					<li>注文完了時に店舗スタッフへリアルタイムで注文内容を通知する仕組みを構築。</li>
+					<li>「注文が入ったことに気づかない」という店舗側のリスクを解消。</li>
+					<li>Discord Webhook連携：注文完了と同時に、注文番号・注文内容（商品名/個数/単価）・合計金額・決済方法・お客様情報（名前/電話番号/メールアドレス）・受け取り日時の情報を店舗専用のDiscordチャンネルへ自動送信する機能を実装。</li>
+				</ul>
+			</ul>
+			<p>共通・その他</p>
+			<ul>
+				<li>ワイヤーフレームの作成</li>
+				<li>予約ページを除く全ページ共通のヘッダー・フッターおよびナビゲーションの実装</li>
+				<li>ボタンの共通コンポーネント設計</li>
+			</ul>
+
+		</section>
+
+		<!-- 工夫した点 -->
+		<section class="mb-5">
+			<h4>制作にあたって</h4>
+		</section>
+		
+		<!-- 戻る -->
+	</main>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
