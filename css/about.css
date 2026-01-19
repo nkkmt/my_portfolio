@@ -79,6 +79,18 @@ a {
 	column-gap: 20px;
 }
 
+.projects-container .badge-personal {
+	background: linear-gradient(to right, #EC6EAD, #3494E6);
+	background: -webkit-linear-gradient(right, #EC6EAD, #3494E6);
+	color: #ffffff;
+}
+
+.projects-container .badge-group {
+	background: linear-gradient(to right, #4ca2cd, #67B26F);
+	background: -webkit-linear-gradient(right, #4ca2cd, #67B26F);
+	color: #ffffff;
+}
+
 .projects-container img {
 	max-width: 100%;
 	object-fit: contain;
