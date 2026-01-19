@@ -27,16 +27,14 @@ a {
 	width: auto;
 }
 
-.skills-container .col-4 {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
 /* スマホ表示でのサイズ統一 */
 .html-logo, .css-logo, .js-logo, .sql-logo {
 	height: 60px;
 	object-fit: contain;
+}
+
+.css-logo {
+	margin-right: 5px;
 }
 
 .jquery-logo {
@@ -60,6 +58,10 @@ a {
 
 	.html-logo, .css-logo, .js-logo, .sql-logo {
 		height: 80px;
+	}
+
+	.css-logo {
+		margin-right: 8px;
 	}
 
 	.jquery-logo {
