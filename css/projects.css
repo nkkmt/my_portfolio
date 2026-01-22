@@ -29,6 +29,7 @@ a {
 
 .btn-arrow {
 	position: relative;
+	border: none;
 }
 
 .btn-arrow::before {
