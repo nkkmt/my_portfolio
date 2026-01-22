@@ -71,12 +71,12 @@
 			<div class="d-flex flex-column gap-5">
 				<!-- トップページ -->
 				<div class="row align-items-center">
-					<div class="col-12 col-md-6">
+					<div class="col-12 col-md-7">
 						<div class="p-2 text-center">
 							<img src="../img/toppage.jpg" class="img-fluid" alt="架空飲食店ホームページのトップページ">
 						</div>
 					</div>
-					<div class="col-12 col-md-6">
+					<div class="col-12 col-md-5">
 						<h5>トップページ</h5>
 						<ul>
 							<li>サイト全体のコンセプトを伝え、主要コンテンツ（テイクアウト・予約等）へスムーズに誘導。</li>
@@ -88,43 +88,34 @@
 
 				<!-- 決済フロー -->
 				<div class="row align-items-center flex-md-row-reverse">
-					<div class="col-12 col-md-6">
+					<div class="col-12 col-md-7">
 						<div class="p-2 text-center">
 							<img src="../img/payment_flow.jpg" class="img-fluid" alt="テイクアウト注文の決済フロー">
 						</div>
 					</div>
-					<div class="col-12 col-md-6">
+					<div class="col-12 col-md-5">
 						<h5>テイクアウト注文・決済フロー</h5>
 						<ul>
-							<li>複雑な入力項目をストレスなく完了させ、正確な注文データを店舗へ送る。</li>
-							<li>範囲：注文情報入力 ＞ 決済方法選択 ＞ Stripe決済/PayPay疑似決済 ＞ 注文完了</li>
-							<li>入力・選択ミスの防止：
-								<ul>
-									<li>店舗の定休日（水曜日）が選択された際、即座にアラートを表示して他の日付への変更を促す動的なバリデーションを実装。</li>
-									<li>最終送信前に「確認モーダル」を挟むことで、ユーザーの操作ミスによる誤注文を未然に防ぐ工夫を施しました。</li>
-								</ul>
-							</li>
-							<li>データの整合性と状態管理：複数の画面にまたがる注文情報を正確に保持・受け渡しするため、PHPのSESSIONを用いた状態管理を実装。決済完了までデータの整合性を維持するロジックを構築しました。
-							</li>
+							<li>注文情報入力〜決済方法選択〜決済〜注文完了までを担当しました。</li>
+							<li>「確認モーダル」を挟むことで、ユーザーの入力・操作ミスによる誤注文を未然に防ぐ工夫を施しました。</li>
+							<li>PHPのSESSIONを決済完了までデータを維持するロジックを構築しました。</li>
+							<li>支払い方法を店頭支払い・事前決済とし、事前決済の場合はStripeを用いたクレジットカード決済を導入しました。</li>
 						</ul>
 					</div>
 				</div>
 
 				<!-- 店舗用通知 -->
 				<div class="row align-items-center">
-					<div class="col-12 col-md-6">
+					<div class="col-12 col-md-7">
 						<div class="p-2 text-center">
 							<img src="../img/discord.jpg" class="img-fluid" alt="店舗用通知">
 						</div>
 					</div>
-					<div class="col-12 col-md-6">
+					<div class="col-12 col-md-5">
 						<h5>自動通知システム（Discord）</h5>
 						<ul>
-							<li>注文完了時に店舗スタッフへリアルタイムで注文内容を通知する仕組みを構築。</li>
-							<li>「注文が入ったことに気づかない」という店舗側のリスクを解消。</li>
-							<li>Discord
-								Webhook連携：注文完了と同時に、注文番号・注文内容（商品名/個数/単価）・合計金額・決済方法・お客様情報（名前/電話番号/メールアドレス）・受け取り日時の情報を店舗専用のDiscordチャンネルへ自動送信する機能を実装。
-							</li>
+							<li>注文完了時に店舗スタッフへリアルタイムで注文内容を通知することで、「注文が入ったことに気づかない」という店舗側のリスクを解消。</li>
+							<li>通知システムにはDiscordを採用し、注文完了と同時に店舗側が必要な情報を送信できる仕組みを構築しました。</li>
 						</ul>
 					</div>
 				</div>
