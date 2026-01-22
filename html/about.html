@@ -10,12 +10,28 @@
 </head>
 
 <body class="bg-light">
+	<!-- ヘッダーナビ -->
+	<!-- navbar-expand-lgでレスポンシブ切り替え -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
 		<div class="container">
 			<a class="navbar-brand fw-bold" href="index.html">Naoko Kumita</a>
-			<div class="ms-auto">
-				<a class="nav-link d-inline" href="about.html">About</a>
-				<a class="nav-link d-inline" href="#">Contact</a>
+
+			<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+				<div class="offcanvas-header">
+					<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body">
+					<ul class="navbar-nav ms-auto gap-lg-3">
+						<li><a class="nav-link d-inline" href="about.html">About</a></li>
+						<li><a class="nav-link d-inline" href="about.html#projects">Projects</a></li>
+						<li><a class="nav-link d-inline" href="https://github.com/nkkmt" target="_blank">GitHub</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</nav>
