@@ -1,4 +1,8 @@
 @charset "UTF-8";
+section {
+  position: relative;
+  height: calc(100vh - 65px);
+}
 
 /* SVG ArtistaのCSSここから */
 
@@ -881,7 +885,7 @@
 
 /* -----------------SVG ArtistaのCSSここまで----------------- */
 
-/* -----------------その他文字のCSS----------------- */
+/* -----------------その他文字のCSSここから----------------- */
 
 /* 全体アニメーション */
 @keyframes fadeInIntro {
@@ -897,8 +901,9 @@
 	animation: fadeInIntro 0.7s ease-out forwards;
 	animation-delay: 0.8s;
 	color: #ffffff;
-	-webkit-text-stroke: 2.5px #202020;
+	-webkit-text-stroke: 3px #333;
 	paint-order: stroke;
+  letter-spacing: 0.09em;
 }
 
 .svg-container {
@@ -908,42 +913,87 @@
 	transform: translateY(2px);
 }
 
+.svg-container svg {
+  max-width: 90vw;
+  height: auto;
+}
+
 .intro-text {
 	opacity: 0;
 	animation: fadeInIntro 1s ease-out forwards;
-	animation-delay: 5.5s;
+	animation-delay: 5s;
+  margin-bottom: 0;
+  letter-spacing: 0.06em;
 }
 
-.badge {
-	color: #ffffff;
+@media (max-width: 991px) {
+  .fade-in-text, .svg-container {
+    margin-bottom: 20px;
+  }
+
+  .intro-text {
+    font-size: 1rem;
+  }
 }
 
-.badge-html {
-	background-color: #ff5500;
+@media (max-width: 500px) {
+  .fade-in-text, .svg-container {
+    margin-bottom: 10px;
+  }
+
+  .fade-in-text {
+    font-size: 32.5px;
+  }
 }
 
-.badge-css {
-	background-color: #0073e6;
+/* -----------------その他文字のCSSここまで----------------- */
+
+/* -----------------スクロールダウンの設定----------------- */
+
+.scroll-down-container {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  animation: fadeInIntro 1s ease-out forwards;
+  animation-delay: 6.5s;
 }
 
-.badge-js {
-	background-color: #ffd91a;
+/* 軌道の線 */
+.scroll-line {
+  width: 1px;
+  height: 100px;
+  background-color: rgba(108, 117, 125, 0.2);
+  position: relative;
 }
 
-.badge-php {
-	background-color: #735ce6;
+/* ドット */
+.scroll-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #6c757d;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  animation:
+    scrollDown 3s ease-in-out infinite;
 }
 
-.badge-figma {
-	background-color: #14cc8f;
+@keyframes scrollDown {
+  0% {
+    opacity: 0;
+    top: 5px;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    top: 105px;
+  }
 }
-
-.btn {
-	cursor: pointer;
-	transition: transform 0.3s ease;
-}
-
-.btn:hover {
-	transform: translateX(2px);
-}
-
