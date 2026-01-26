@@ -14,6 +14,7 @@ a {
 }
 
 body {
+	width: 100%;
 	background-color: #ffffff;
 	color: #222222;
 	font-family: 'Montserrat', 'Zen Kaku Gothic New', sans-serif;
@@ -27,6 +28,19 @@ h1, h2, h3, .fw-bold {
 	color: #000000;
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
+}
+
+/* メインセクション */
+.container-wrapper {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+@media (min-width: 991px) {
+  .container-wrapper {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
 }
 
 /* トップページ戻るボタン */
