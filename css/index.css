@@ -1107,11 +1107,29 @@
 	}
 }
 
+.skill-text {
+  font-size: clamp(0.85rem, 0.2vw + 0.8rem, 0.95rem);
+	color: #495057;
+	line-height: 1.75;
+}
+
 /* -----------------About----------------- */
 
-.profile-icon {
-	width: 200px;
-	border-radius: 50%;
+.profile-img {
+	width: 85%;
+  margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+  .profile-img {
+    width: 60%;
+  }
+}
+
+.profile-text {
+  font-size: clamp(0.85rem, 0.2vw + 0.8rem, 0.95rem);
+	color: #495057;
+	line-height: 1.75;
 }
 
 /* -----------------Contact----------------- */
