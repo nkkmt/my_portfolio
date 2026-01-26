@@ -5,10 +5,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Projects | Naoko Kumita</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+New&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="../css/common.css">
 	<link rel="stylesheet" href="../css/projects.css">
 </head>
@@ -20,19 +23,23 @@
 		<div class="container">
 			<a class="navbar-brand fw-bold" href="index.html">Naoko Kumita</a>
 
-			<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+			<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+				aria-controls="offcanvasNavbar">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
-			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+				aria-labelledby="offcanvasNavbarLabel">
 				<div class="offcanvas-header">
 					<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 				</div>
 				<div class="offcanvas-body">
 					<ul class="navbar-nav ms-auto gap-lg-3">
-						<li><a class="nav-link d-inline" href="about.html">About</a></li>
-						<li><a class="nav-link d-inline" href="about.html#projects">Projects</a></li>
+						<li><a class="nav-link d-inline" href="#projects">Projects</a></li>
+						<li><a class="nav-link d-inline" href="#skills">Skills</a></li>
+						<li><a class="nav-link d-inline" href="#about">About</a></li>
+						<li><a class="nav-link d-inline" href="#contact">Contact</a></li>
 						<li><a class="nav-link d-inline" href="https://github.com/nkkmt" target="_blank">GitHub</a></li>
 					</ul>
 				</div>
@@ -40,134 +47,155 @@
 		</div>
 	</nav>
 
-	<main class="container py-5">
-		<!-- ヒーロー -->
-		<section class="hero text-center">
-			<div class="d-flex align-items-center justify-content-center">
-				<h4 class="fw-bold mb-0">架空飲食店ホームページ「本格韓国料理 ソダム」</h4>
-				<div class="d-flex align-items-center justify-content-center gap-2">
-					<a href="https://nkkmt.stars.ne.jp/koreafood_sodam/html/index.html" target="_blank">
-						<div class="d-flex justify-content-center align-items-center img-container">
-							<img src="../img/link.png" class="link" alt="ポートフォリオサイトへ">
+	<!-- メイン -->
+	<div class="container-wrapper">
+		<main class="container py-5">
+			<!-- ヒーロー -->
+			<section class="hero text-center">
+				<div class="d-flex align-items-center justify-content-center">
+					<h4 class="fw-bold mb-0">架空飲食店ホームページ「本格韓国料理 ソダム」</h4>
+					<div class="d-flex align-items-center justify-content-center gap-2">
+						<a href="https://nkkmt.stars.ne.jp/koreafood_sodam/html/index.html" target="_blank">
+							<div class="d-flex justify-content-center align-items-center icon-img-container">
+								<img src="../img/link.png" class="link" alt="ポートフォリオサイトへ">
+							</div>
+						</a>
+						<a href="https://github.com/okb55-hub/group-project-site" target="_blank">
+							<div class="d-flex justify-content-center align-items-center icon-img-container">
+								<img src="../img/github.png" class="github" alt="GitHubへ">
+							</div>
+						</a>
+					</div>
+				</div>
+				<img src="../img/sodam_2.jpg" class="hero-img" alt="架空飲食店HP">
+			</section>
+
+			<!-- 概要 -->
+			<section class="mb-5 text-center">
+				<p>
+					架空の韓国料理店をモデルに、テイクアウト注文と決済、来店予約をWeb上で完結させるWebサービスです。<br>
+					ターゲットは20〜30代女性とファミリー層。直感的な操作と、日常的に利用したくなるような利便性とデザインの両立を目指しました。
+				</p>
+			</section>
+
+			<div class="row row-cols-1 row-cols-lg-2 g-5 mb-5 text-center">
+				<!-- 制作期間 -->
+				<section class="col">
+					<h4 class="section-title"><span>制作期間</span></h4>
+					<p class="text-detail">ワイヤーフレーム・デザイン：約1週間<br>コーディング：約3週間</p>
+				</section>
+
+				<!-- 制作人数 -->
+				<section class="col">
+					<h4 class="section-title"><span>制作人数</span></h4>
+					<p class="text-detail">3名</p>
+				</section>
+
+				<!-- 使用技術 -->
+				<section class="col">
+					<h4 class="section-title"><span>使用技術</span></h4>
+					<p class="text-detail">Figma / HTML / CSS / JavaScript / PHP / MySQL / Stripe</p>
+				</section>
+
+				<!-- 担当内容 -->
+				<section class="col">
+					<h4 class="section-title"><span>担当内容</span></h4>
+					<p class="text-detail">ワイヤーフレーム作成、UIデザイン、フロントエンド実装、<br>決済フローのロジック構築、Discordを用いた店舗通知システムの実装</p>
+				</section>
+			</div>
+
+
+			<!-- 詳細説明 -->
+			<section class="mb-5">
+				<h4 class="text-center section-title"><span>詳細説明</span></h4>
+				<div class="d-flex flex-column gap-5 pt-3 detail-container">
+					<!-- トップページ -->
+					<div class="row align-items-center">
+						<div class="col-12 col-md-7">
+							<div class="p-2 text-center">
+								<img src="../img/toppage.jpg" class="img-fluid" alt="架空飲食店ホームページのトップページ">
+							</div>
 						</div>
-					</a>
-					<a href="https://github.com/okb55-hub/group-project-site" target="_blank">
-						<div class="d-flex justify-content-center align-items-center img-container">
-							<img src="../img/github.png" class="github" alt="GitHubへ">
+						<div class="col-12 col-md-5">
+							<h5>トップページ</h5>
+							<p class="text-detail">
+								サイト訪問時に瞬時に食欲を刺激するビジュアル選定に注力しました。<br>
+								また、主要アクションである「テイクアウト注文・予約」を促すフローティングボタンを設置し、離脱率の低下を図っています。
+							</p>
 						</div>
-					</a>
+					</div>
+
+					<!-- 決済フロー -->
+					<div class="row align-items-center flex-md-row-reverse">
+						<div class="col-12 col-md-7">
+							<div class="p-2 text-center">
+								<img src="../img/payment_flow.jpg" class="img-fluid" alt="テイクアウト注文の決済フロー">
+							</div>
+						</div>
+						<div class="col-12 col-md-5">
+							<h5>テイクアウト注文・決済フロー</h5>
+							<p class="text-detail">
+								注文情報の入力から注文完了までを担当。<br>
+								ユーザーの操作ミスによる誤注文を防ぐため、確認モーダルを挟む設計にしました。また、Stripe APIを導入し、クレジットカード決済も実現しています。<br>
+								<small>※現在はテストモードのため、ダミーカード情報による決済シュミレーションが可能です。</small>
+							</p>
+						</div>
+					</div>
+
+					<!-- 店舗用通知 -->
+					<div class="row align-items-center">
+						<div class="col-12 col-md-7">
+							<div class="p-2 text-center">
+								<img src="../img/discord.jpg" class="img-fluid" alt="店舗用通知">
+							</div>
+						</div>
+						<div class="col-12 col-md-5">
+							<h5>自動通知システム（Discord）</h5>
+							<p class="text-detail">
+								注文完了と同時に店舗側Discordへ即時通知が飛ぶ仕組みを構築。<br>
+								店舗側の注文の見落としを防ぎ、オペレーションの効率化へ繋げられるようにしました。
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<!-- 戻る -->
+			<div class="container-fluid px-lg-5 px-3 btn-container">
+				<div class="row align-items-center text-center g-2 g-md-5">
+					<div class="col-md-4 mb-2 mb-md-0">
+						<a href="index.html" class="btn btn-arrow btn-arrow-left w-100">トップページに戻る</a>
+					</div>
+					<div class="col-md-4 mb-2 mb-md-0">
+						<a href="https://nkkmt.stars.ne.jp/koreafood_sodam/html/index.html" target="_blank"
+							class="btn w-100 btn-center">VIEW
+							WEB SITE</a>
+					</div>
+					<div class="col-md-4 mb-2 mb-md-0">
+						<a href="projects_02.html" class="btn w-100 btn-arrow btn-arrow-right">個人制作の作品へ</a>
+					</div>
 				</div>
 			</div>
-			<img src="../img/sodam_2.jpg" class="hero-img" alt="架空飲食店HP">
-		</section>
+		</main>
+	</div>
 
-		<!-- 概要 -->
-		<section class="mb-5 text-center">
-			<p>
-				架空の韓国料理店をモデルに、テイクアウト注文と決済、来店予約をWeb上で完結できることを目的としたWebサイトです。<br>
-				ターゲットは20〜30代女性とファミリー層と想定し、直感的に操作でき、日常的に利用したくなるような利便性とデザインの両立を目指しました。
+	<!-- トップページ戻るボタン -->
+	<a href="#" class="btn page-top" id="pageTopBtn"></a>
+
+	<!-- フッター -->
+	<footer class="footer mt-4">
+		<div class="container py-2">
+			<p class="text-muted text-center">
+				<small>Copyright&copy;2026 Naoko Kumita All Rights Reserverd.</small>
 			</p>
-		</section>
 
-		<!-- 制作期間 -->
-		<section class="mb-5 d-flex flex-column flex-md-row gap-md-5">
-			<h4>制作期間</h4>
-			<p>ワイヤーフレーム・デザイン：約1週間<br>コーディング：約3週間</p>
-		</section>
-
-		<!-- 制作人数 -->
-		<section class="mb-5 d-flex flex-column flex-md-row gap-md-5">
-			<h4>制作人数</h4>
-			<p>3名</p>
-		</section>
-
-		<!-- 使用技術 -->
-		<section class="mb-5 d-flex flex-column flex-md-row gap-md-5">
-			<h4>使用技術</h4>
-			<p>Figma/HTML/CSS/JavaScript/PHP/MySQL/Stripe</p>
-		</section>
-
-		<!-- 担当内容 -->
-		<section class="mb-5">
-			<div class="mb-5 d-flex flex-column flex-md-row gap-md-5">
-				<h4>担当内容</h4>
-				<p>ワイヤーフレーム作成、フロントエンド実装、UIデザイン、<br>決済フローのロジック構築、Discordを用いた店舗通知システムの実装</p>
-			</div>
-
-			<h4 class="mb-4">詳細説明</h4>
-
-			<div class="d-flex flex-column gap-5 detail-container">
-				<!-- トップページ -->
-				<div class="row align-items-center">
-					<div class="col-12 col-md-7">
-						<div class="p-2 text-center">
-							<img src="../img/toppage.jpg" class="img-fluid" alt="架空飲食店ホームページのトップページ">
-						</div>
-					</div>
-					<div class="col-12 col-md-5">
-						<h5>トップページ</h5>
-						<ul>
-							<li>サイト全体のコンセプトを伝え、主要コンテンツ（テイクアウト・予約等）へスムーズに誘導。</li>
-							<li>ファーストビューの最適化：サイトを開いた瞬間に「美味しさ」を感じることができるよう、画像の選択やキャッチコピー視認性にこだわりました。</li>
-							<li>スムーズな導線設計：フローティングボタンを設置し、離脱率の低下を図りました。</li>
-						</ul>
-					</div>
-				</div>
-
-				<!-- 決済フロー -->
-				<div class="row align-items-center flex-md-row-reverse">
-					<div class="col-12 col-md-7">
-						<div class="p-2 text-center">
-							<img src="../img/payment_flow.jpg" class="img-fluid" alt="テイクアウト注文の決済フロー">
-						</div>
-					</div>
-					<div class="col-12 col-md-5">
-						<h5>テイクアウト注文・決済フロー</h5>
-						<ul>
-							<li>注文情報入力〜決済方法選択〜決済〜注文完了までを担当しました。</li>
-							<li>「確認モーダル」を挟むことで、ユーザーの入力・操作ミスによる誤注文を未然に防ぐ工夫を施しました。</li>
-							<li>PHPのSESSIONを決済完了までデータを維持するロジックを構築しました。</li>
-							<li>支払い方法を店頭支払い・事前決済とし、事前決済の場合はStripeを用いたクレジットカード決済を導入しました。</li>
-						</ul>
-					</div>
-				</div>
-
-				<!-- 店舗用通知 -->
-				<div class="row align-items-center">
-					<div class="col-12 col-md-7">
-						<div class="p-2 text-center">
-							<img src="../img/discord.jpg" class="img-fluid" alt="店舗用通知">
-						</div>
-					</div>
-					<div class="col-12 col-md-5">
-						<h5>自動通知システム（Discord）</h5>
-						<ul>
-							<li>注文完了時に店舗スタッフへリアルタイムで注文内容を通知することで、「注文が入ったことに気づかない」という店舗側のリスクを解消。</li>
-							<li>通知システムにはDiscordを採用し、注文完了と同時に店舗側が必要な情報を送信できる仕組みを構築しました。</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- 戻る -->
-		<div class="container-fluid px-lg-5 px-3 btn-container">
-			<div class="row align-items-center text-center g-2 g-md-5">
-				<div class="col-md-4 mb-2 mb-md-0">
-					<a href="index.html" class="btn btn-arrow btn-arrow-left w-100">トップページに戻る</a>
-				</div>
-				<div class="col-md-4 mb-2 mb-md-0">
-					<a href="https://nkkmt.stars.ne.jp/koreafood_sodam/html/index.html" target="_blank"
-						class="btn w-100 btn-center">VIEW
-						WEB SITE</a>
-				</div>
-				<div class="col-md-4 mb-2 mb-md-0">
-					<a href="projects_02.html" class="btn w-100 btn-arrow btn-arrow-right">個人制作の作品へ</a>
-				</div>
-			</div>
 		</div>
-	</main>
+	</footer>
 
+	<script src="https://code.jquery.com/jquery-4.0.0.min.js"
+		integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+	<script src="../js/style.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
 		crossorigin="anonymous"></script>

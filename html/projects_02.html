@@ -5,10 +5,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Projects | Naoko Kumita</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+New&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="../css/common.css">
 	<link rel="stylesheet" href="../css/projects.css">
 </head>
@@ -20,19 +23,23 @@
 		<div class="container">
 			<a class="navbar-brand fw-bold" href="index.html">Naoko Kumita</a>
 
-			<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+			<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+				aria-controls="offcanvasNavbar">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
-			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+				aria-labelledby="offcanvasNavbarLabel">
 				<div class="offcanvas-header">
 					<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 				</div>
 				<div class="offcanvas-body">
 					<ul class="navbar-nav ms-auto gap-lg-3">
-						<li><a class="nav-link d-inline" href="about.html">About</a></li>
-						<li><a class="nav-link d-inline" href="about.html#projects">Projects</a></li>
+						<li><a class="nav-link d-inline" href="#projects">Projects</a></li>
+						<li><a class="nav-link d-inline" href="#skills">Skills</a></li>
+						<li><a class="nav-link d-inline" href="#about">About</a></li>
+						<li><a class="nav-link d-inline" href="#contact">Contact</a></li>
 						<li><a class="nav-link d-inline" href="https://github.com/nkkmt" target="_blank">GitHub</a></li>
 					</ul>
 				</div>
@@ -40,119 +47,136 @@
 		</div>
 	</nav>
 
-	<main class="container py-5">
-		<!-- ヒーロー -->
-		<section class="hero text-center">
-			<div class="d-flex align-items-center justify-content-center">
-				<h4 class="fw-bold mb-0">本のマッチングアプリ「Issatsu」</h4>
+	<!-- メイン -->
+	<div class="container-wrapper">
+		<main class="container py-5">
+			<!-- ヒーロー -->
+			<section class="hero text-center">
 				<div class="d-flex align-items-center justify-content-center">
-					<a href="https://nkkmt.stars.ne.jp/bookapp3.5/html/index.html" target="_blank">
-						<div class="d-flex justify-content-center align-items-center img-container">
-							<img src="../img/link.png" class="link" alt="ポートフォリオサイトへ">
+					<h4 class="fw-bold mb-0">本のマッチングアプリ「Issatsu」</h4>
+					<div class="d-flex align-items-center justify-content-center">
+						<a href="https://nkkmt.stars.ne.jp/bookapp3.5/html/index.html" target="_blank">
+							<div class="d-flex justify-content-center align-items-center icon-img-container">
+								<img src="../img/link.png" class="link" alt="ポートフォリオサイトへ">
+							</div>
+						</a>
+					</div>
+				</div>
+				<img src="../img/issatsu.jpg" class="hero-img" alt="本のマッチングアプリ">
+			</section>
+
+			<!-- 概要 -->
+			<section class="mb-5 text-center">
+				<p>
+					「選択肢が多すぎて、本を選べない」という課題を解決するためのマッチングアプリです。<br>
+					楽天ブックスAPIを活用し、膨大な書籍データの中から直感的な操作で「次の一冊」に出会える体験を提供できるようにこだわりました。
+				</p>
+			</section>
+
+			<div class="row row-cols-1 row-cols-lg-2 g-5 mb-5 text-center">
+				<!-- 制作期間 -->
+				<section class="col">
+					<h4 class="section-title"><span>制作期間</span></h4>
+					<p class="text-detail">約2週間</p>
+				</section>
+
+				<!-- 使用技術 -->
+				<section class="col">
+					<h4 class="section-title"><span>使用技術</span></h4>
+					<p class="text-detail">HTML / CSS / JavaScript</p>
+				</section>
+			</div>
+
+			<!-- 詳細説明 -->
+			<section class="mb-5">
+				<h4 class="text-center section-title"><span>詳細説明</span></h4>
+
+				<div class="d-flex flex-column gap-5 detail-container">
+					<!-- カードスワイプ -->
+					<div class="row align-items-center">
+						<div class="col-12 col-md-7">
+							<div class="text-center p-2">
+								<img src="../img/swipe.jpg" class="img-fluid" alt="カードスワイプ画面">
+							</div>
 						</div>
-					</a>
+						<div class="col-12 col-md-5">
+							<h5>カードスワイプ機能</h5>
+							<p class="text-detail">
+								JavaScriptを用いて、Tinder風のスワイプUIを実装。<br>
+								いいね／スキップを直感的に行えるよう、クリックだけではなく、フリック動作と滑らかなアニメーション、視覚的なフィードバックにより、楽しく本を選べるUXを追求しました。
+							</p>
+						</div>
+					</div>
+
+					<!-- マイリスト・スキップ履歴 -->
+					<div class="row align-items-center flex-md-row-reverse">
+						<div class="col-12 col-md-7">
+							<div class="text-center p-2">
+								<img src="../img/list.jpg" class="img-fluid" alt="マイリストとスキップ履歴">
+							</div>
+						</div>
+						<div class="col-12 col-md-5">
+							<h5>マイリスト・スキップ履歴</h5>
+							<p class="text-detail">
+								スワイプ結果（いいね／スキップ）をLocalStorageに保存し、リロード後もデータが保持される仕組みを構築。<br>
+								データはマイリストとスキップ履歴から確認できる機能を実装しました。
+							</p>
+						</div>
+					</div>
+
+					<!-- 検索機能 -->
+					<div class="row align-items-center">
+						<div class="col-12 col-md-7">
+							<div class="text-center p-2">
+								<img src="../img/search.jpg" class="img-fluid" alt="検索機能">
+							</div>
+						</div>
+						<div class="col-12 col-md-5">
+							<h5>詳細な検索機能</h5>
+							<p class="text-detail">
+								「直感的な出会い」だけではなく、特定の条件で探したいニーズにも対応。<br>
+								タイトル・著者名・ジャンルによる絞り込み機能を備え、検索結果から直接マイリストへ追加できる動線も確保しました。
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- 戻る -->
+			<div class="container-fluid px-lg-5 px-3 btn-container">
+				<div class="row align-items-center text-center g-2 g-md-5">
+					<div class="col-md-4 mb-2 mb-md-0">
+						<a href="index.html" class="btn btn-arrow btn-arrow-left w-100">トップページに戻る</a>
+					</div>
+					<div class="col-md-4 mb-2 mb-md-0">
+						<a href="https://nkkmt.stars.ne.jp/bookapp3.5/html/index.html" target="_blank"
+							class="btn w-100 btn-center">VIEW
+							WEB SITE</a>
+					</div>
+					<div class="col-md-4 mb-2 mb-md-0">
+						<a href="projects_01.html" class="btn w-100 btn-arrow btn-arrow-right">グループ制作の作品へ</a>
+					</div>
 				</div>
 			</div>
-			<img src="../img/issatsu.jpg" class="hero-img" alt="本のマッチングアプリ">
-		</section>
+		</main>
+	</div>
 
-		<!-- 概要 -->
-		<section class="mb-5 text-center">
-			<!-- <h4 class="fw-bold mb-3">概要</h4> -->
-			<p>
-				「本が多すぎて何を選べばいいかわからない」という課題を解決するために、楽しみながら本を選べるマッチングアプリです。<br>
-				ターゲットは普段本選びに迷ってしまう方や読書に興味がある方と想定し、直感的な操作性を重視しました。
+	<!-- トップページ戻るボタン -->
+	<a href="#" class="btn page-top" id="pageTopBtn"></a>
+
+	<!-- フッター -->
+	<footer class="footer mt-4">
+		<div class="container py-2">
+			<p class="text-muted text-center">
+				<small>Copyright&copy;2026 Naoko Kumita All Rights Reserverd.</small>
 			</p>
-			<!-- <p>
-				<a href="https://nkkmt.stars.ne.jp/koreafood_sodam/html/index.html" target="_blank">実際のサイト</a>
-			</p> -->
-		</section>
 
-		<!-- 制作期間 -->
-		<section class="mb-5">
-			<h4>制作期間</h4>
-			<p>約2週間</p>
-		</section>
-
-		<!-- 使用技術 -->
-		<section class="mb-5">
-			<h4>使用技術</h4>
-			<p>HTML/CSS/JavaScript</p>
-		</section>
-
-		<!-- 詳細内容 -->
-		<section class="mb-5">
-			<h4>詳細説明</h4>
-
-			<div class="d-flex flex-column gap-5 detail-container">
-				<!-- カードスワイプ -->
-				<div class="row align-items-center">
-					<div class="col-12 col-md-7">
-						<div class="text-center p-2">
-							<img src="../img/swipe.jpg" class="img-fluid" alt="カードスワイプ画面">
-						</div>
-					</div>
-					<div class="col-12 col-md-5">
-						<h5>カードスワイプ機能</h5>
-						<ul>
-							<li>JavaScriptを用いて、TinderやPairsのような左右のスワイプ動作を実装しました。</li>
-							<li>「いいね」と「スキップ」を直感的に行えるよう、操作の滑らかさと視覚的なフィードバックにこだわりました。</li>
-						</ul>
-					</div>
-				</div>
-
-				<!-- マイリスト・スキップ履歴 -->
-				<div class="row align-items-center flex-md-row-reverse">
-					<div class="col-12 col-md-7">
-						<div class="text-center p-2">
-							<img src="../img/list.jpg" class="img-fluid" alt="マイリストとスキップ履歴">
-						</div>
-					</div>
-					<div class="col-12 col-md-5">
-						<h5>マイリスト・スキップ履歴</h5>
-						<ul>
-							<li>スワイプの結果を即座に保存し、「いいね」した本はマイリストへ、「スキップ」した本はその他のページのスキップした履歴から確認できる機能を実装しました。</li>
-							<li>スワイプの結果はLocalStorageを使用しました。</li>
-						</ul>
-					</div>
-				</div>
-
-				<!-- 検索機能 -->
-				<div class="row align-items-center">
-					<div class="col-12 col-md-7">
-						<div class="text-center p-2">
-							<img src="../img/search.jpg" class="img-fluid" alt="検索機能">
-						</div>
-					</div>
-					<div class="col-12 col-md-5">
-						<h5>詳細な検索機能</h5>
-						<ul>
-							<li>スワイプだけでなく、目的の本を自ら探せる検索機能も備えています。</li>
-							<li>タイトル・著者名から検索が可能で、さらにジャンルを絞っての検索も可能です。</li>
-							<li>検索結果からマイリストへの追加も可能です。</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- 戻る -->
-		<div class="container-fluid px-lg-5 px-3 btn-container">
-			<div class="row align-items-center text-center g-2 g-md-5">
-				<div class="col-md-4 mb-2 mb-md-0">
-					<a href="index.html" class="btn btn-arrow btn-arrow-left w-100">トップページに戻る</a>
-				</div>
-				<div class="col-md-4 mb-2 mb-md-0">
-					<a href="https://nkkmt.stars.ne.jp/bookapp3.5/html/index.html" target="_blank" class="btn w-100 btn-center">VIEW
-						WEB SITE</a>
-				</div>
-				<div class="col-md-4 mb-2 mb-md-0">
-					<a href="projects_01.html" class="btn w-100 btn-arrow btn-arrow-right">グループ制作の作品へ</a>
-				</div>
-			</div>
 		</div>
-	</main>
+	</footer>
 
+	<script src="https://code.jquery.com/jquery-4.0.0.min.js"
+		integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+	<script src="../js/style.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
 		crossorigin="anonymous"></script>
