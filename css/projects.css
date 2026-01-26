@@ -1,4 +1,28 @@
 @charset "UTF-8";
+.l-section {
+	padding-top: clamp(2rem, 4vw, 4rem);
+	padding-bottom: clamp(2rem, 4vw, 4rem);
+}
+
+.l-section:first-of-type {
+	padding-top: clamp(1rem, 2vw, 2.5rem);
+}
+
+
+.hero h4 {
+	font-size: clamp(1.1rem, 2.5vw + 0.4rem, 1.4rem);
+    line-height: 1.4;
+}
+
+.mb-display {
+	display: none;
+}
+
+@media (max-width: 500px) {
+	.mb-display {
+		display: block;
+	}
+}
 
 .icon-img-container {
 	width: 40px;
@@ -28,14 +52,18 @@
 }
 
 @media (max-width: 500px) {
-	
-	
+	.icon-img-container {
+		width: 30px;
+		height: 30px;
+	}
+
 	.hero-img {
-		width: 90%;
+		width: 100%;
 	}
 }
 
 /* ヒーロー以下の共通設定 */
+
 .section-title {
 	font-size: 1.1rem;
 	font-weight: 700;
@@ -46,15 +74,16 @@
 }
 
 .section-title span {
+	font-size: clamp(0.9rem, 2.5vw, 1.1rem);
 	border: solid 1px #333;
-	padding: 4px 15px;
+	padding: 6px 20px;
 	box-shadow: 2px 2px #333;
 }
 
 .text-detail {
-	font-size: 0.94rem;
+	font-size: clamp(0.85rem, 0.2vw + 0.8rem, 0.95rem);
 	color: #495057;
-	line-height: 1.7;
+	line-height: 1.75;
 	margin-bottom: 0;
 	overflow-wrap: break-word;
 }
@@ -75,9 +104,15 @@
 	text-decoration: underline;
 }
 
+@media (max-width: 500px) {
+	.detail-container h5 {
+		margin-top: 0.8rem;
+	}
+}
 
 /* ページ下部ボタン */
 .btn-container .btn {
+	font-size: clamp(0.8rem, 1.5vw + 0.5rem, 1rem);
 	max-width: 230px;
 	margin: 0 auto;
 	padding: 15px 0;
@@ -154,9 +189,9 @@
 	}
 
 	.btn-container .btn {
-		font-size: 0.9rem;
-		max-width: 70%;
-		padding: 15px 0;
+		font-size: 0.85rem;
+		max-width: 95%;
+		padding: 10px 0;
 	}
 
 }
