@@ -14,20 +14,57 @@ a {
 }
 
 body {
-	width: 100%;
 	background-color: #ffffff;
 	color: #222222;
 	font-family: 'Montserrat', 'Zen Kaku Gothic New', sans-serif;
+	font-size: clamp(0.9rem, 0.85rem + 0.25vw, 1rem);
 	line-height: 1.9;
-	letter-spacing: 0.04em;
+	letter-spacing: 0.05em;
 	position: relative;
 }
 
-h1, h2, h3, .fw-bold {
+.navbar-toggler {
+	border: none;
+}
+
+.navbar-toggler:focus {
+	box-shadow: none;
+	outline: none;
+	opacity: 0.7;
+}
+
+@media (max-width: 992px) {
+	.offcanvas-title {
+		font-weight: 700;
+		color: #000000;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		padding-left: 10px;
+	}
+
+	.offcanvas-body li {
+		margin-bottom: 20px;
+		padding-left: 10px;
+	}
+
+	.offcanvas-body li:last-child {
+		margin-bottom: 0;
+	}
+}
+
+h1, h2, h3, .fw-bold{
 	font-weight: 700;
 	color: #000000;
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
+}
+
+h2 {
+	font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+h3 {
+	font-size: clamp(1.3rem, 3vw, 1.75rem);
 }
 
 /* メインセクション */
@@ -53,6 +90,7 @@ h1, h2, h3, .fw-bold {
 	height: 50px;
 	border-radius: 50%;
 	border: solid 1px #333;
+	background-color: #ffffff;
 	display: none;
 	display: inline-block;
 }
