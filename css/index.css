@@ -999,20 +999,7 @@
   }
 }
 
-/* -----------------ヒーローセクション以下の共通設定----------------- */
-
-.container-wrapper {
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-@media (min-width: 991px) {
-  .container-wrapper {
-    padding-left: 15%;
-    padding-right: 15%;
-  }
-}
-
+/* -----------------ヒーローセクション以下の設定----------------- */
 .container section {
   margin-top: 100px;
 }
