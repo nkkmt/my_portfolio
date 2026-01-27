@@ -902,7 +902,7 @@
 	animation: fadeInIntro 0.7s ease-out forwards;
 	animation-delay: 0.8s;
 	color: #ffffff;
-	-webkit-text-stroke: 3px #333;
+	-webkit-text-stroke: 2.5px #000000;
 	paint-order: stroke;
   letter-spacing: 0.09em;
 }
@@ -925,6 +925,7 @@
 	animation-delay: 5s;
   margin-bottom: 0;
   letter-spacing: 0.06em;
+  font-size: clamp(1rem, 2vw, 1.25rem);
 }
 
 @media (max-width: 991px) {
@@ -933,11 +934,7 @@
   }
 
   .fade-in-text {
-    -webkit-text-stroke: 1.5px #333;
-  }
-
-  .intro-text {
-    font-size: 1rem;
+    -webkit-text-stroke: 1.25px #000000;
   }
 }
 
