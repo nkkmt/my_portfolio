@@ -932,6 +932,10 @@
     margin-bottom: 20px;
   }
 
+  .fade-in-text {
+    -webkit-text-stroke: 1.5px #333;
+  }
+
   .intro-text {
     font-size: 1rem;
   }
@@ -944,6 +948,10 @@
 
   .fade-in-text {
     font-size: 32.5px;
+  }
+
+  .intro-text {
+    font-size: 0.85rem;
   }
 }
 
