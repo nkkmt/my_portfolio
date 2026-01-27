@@ -12,10 +12,12 @@ $(function() {
 		}
 	});
 
-	pageTopBtn.click(function() {
-		$('body,html').animate({
-			scrollTop: 0
-		}, 800);
-		return false;
+	pageTopBtn.click(function(e) {
+		e.prevenrDefault();
+
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth'
+		});
 	});
 });

@@ -13,6 +13,10 @@ a {
 	color: #222222;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background-color: #ffffff;
 	color: #222222;
